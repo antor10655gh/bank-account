@@ -14,5 +14,44 @@
             <h1 class="lg:text-5xl  font-bold">My <span class="text-lime-300">Account</span></h1>
         </div>
     </header>
+
+    <main class="lg:w-3/4 mx-auto">
+        <!-- deposit, withdraw and balance sheet -->
+        <section class="text-white mt-10">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-teal-200 p-2 lg:p-8 rounded">
+                    <h2 class="lg:text-3xl">Deposit</h2>
+                    <h3 class="lg:text-6xl"> <span id="deposit-total">0.0</span>৳</h3>
+                </div>
+                <div class="bg-lime-200 p-2 lg:p-8 rounded">
+                    <h2 class="lg:text-3xl">Withdraw</h2>
+                    <h3 class="lg:text-6xl"><span id="withdraw-total">0.0</span>৳</h3>
+                </div>
+                <div class="bg-yellow-200 p-2 lg:p-8 rounded">
+                    <h2 class="lg:text-3xl">Balance</h2>
+                    <h3 class="lg:text-6xl"><span id="balance-total">222.0</span>৳</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- enter deposit and withdraw balance -->
+        <section>
+            <div class="grid lg:grid-cols-2 gap-4 mt-8">
+                <div class="bg-teal-100 p-8 rounded">
+                    <h2 class="lg:text-3xl">Please Deposit</h2>
+                    <input id="deposit-input" type="text" name="deposit-amount" class="mt-1 px-2 py-2 lg:px-3 lg:py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="৳ amount you want to deposit" />
+                    <button id="deposit-button" class="rounded-none bg-teal-300 mt-5 px-6 py-2 text-white">Deposit</button>
+                </div>
+                <div class="bg-lime-100 p-8 rounded">
+                    <h2 class="lg:text-3xl">Please Withdraw</h2>
+                    <input id="withdraw-input" type="text" name="withdraw-amount" class="mt-1 px-2 py-2 lg:px-3 lg:py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="৳ amount you want to withdraw" />
+                    <button id="withdraw-button" class="rounded-none bg-lime-300 mt-5 px-6 py-2 text-white">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- add script file -->
+    <script src="js/banking.js"></script>
 </body>
 </html>
